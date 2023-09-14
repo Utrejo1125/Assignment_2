@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {background-color: black;}
+</style>
+<body>
+    
+<script>
+    let age = 0
+</script>
+
+<h1 style="color: red;">
+    Welcome to my page about my dog Milo
+</h1>
+
+<p style="color: wheat;">
+Milo was born on April 28, 2019...
+</p>
+
+<p style="color: wheat;">
+Here he is when he was 2 months old:
+</p>
+
+<img src="Milo_baby.jpg" alt="Milo as a baby" width="388" height="504" id = "baby">
+
+
+<script>
+    function changeImg()
+    {
+        if(age === 1)
+        {
+            document.getElementById("baby").src="Milo_adult.jpg";
+            age++;
+        }
+        if(age === 0)
+        {
+            document.getElementById("baby").src="Milo_Teen.jpg";
+            age++;
+        }
+    }
+    
+    function reset()
+    {
+        document.getElementById("baby").src="Milo_baby.jpg";
+        age = 0;
+    }
+</script>
+
+<p>
+
+</p>
+
+<button onclick= "changeImg()">Make him grow up
+</button>
+<button onclick= "reset()">Reset
+</button>
+
+
+
+</body>
+</html>
