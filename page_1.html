@@ -13,11 +13,11 @@
     Welcome to my page about my dog Milo
 </h1>
 
-<p style="color: wheat;">
+<h3 style="color: wheat;">
 Milo was born on April 28, 2019...
-</p>
+</h3>
 
-<p style="color: wheat;">
+<p style="color: wheat;" id= "ageold">
 Here he is when he was 2 months old:
 </p>
 
@@ -30,11 +30,13 @@ Here he is when he was 2 months old:
         if(age === 1)
         {
             document.getElementById("baby").src="Milo_adult.jpg";
+            document.getElementById("ageold").textContent="Here he is now at 4 years old:";
             age++;
         }
         if(age === 0)
         {
             document.getElementById("baby").src="Milo_Teen.jpg";
+            document.getElementById("ageold").textContent="Here he is when he was 6 months old:";
             age++;
         }
     }
@@ -42,20 +44,32 @@ Here he is when he was 2 months old:
     function reset()
     {
         document.getElementById("baby").src="Milo_baby.jpg";
+        document.getElementById("ageold").textContent="Here he is when he was 2 months old:";
         age = 0;
     }
 </script>
 
-<p>
-
-</p>
+<p></p> empty space
 
 <button onclick= "changeImg()">Make him grow up
 </button>
 <button onclick= "reset()">Reset
 </button>
 
+<p style="color: chocolate;">
+    ~Here are some of his favorite foods~
+</p>
 
+<ul style="color: chartreuse;">
+    <li>Bananas</li>
+    <li>Apples</li>
+    <li>Literally any fruit</li>
+    <li>Peanut Butter</li>
+</ul>
+
+<a style="color:white;" href="index.html">
+    Back to homepage
+</a>
 
 </body>
 </html>
