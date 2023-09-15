@@ -8,7 +8,11 @@
 <script>
     function addImg()
     {
-        document.createElement("apollo").src="apollo.jpg";
+        var apollo = document.createElement("img");
+        apollo.src = 'apollo.jpg';
+        apollo.width = "388";
+        apollo.height = "504";
+        document.getElementById('here').appendChild(apollo);
     }
 </script>
 
@@ -32,20 +36,24 @@
 </p>
 <img src="manchas_2017.jpg" alt="Manchas is 2017" width="388" height="504" id="manchas-2017">
 
-<p>
+<p style="color: wheat;">
     This year we got a new kitty and his name is Apollo!
 </p>
 
 
 <p></p>
 
-<button onclick="addImg()">Click here to reveal Apollo
+<button style="color: red;" onclick="addImg()">Click here to reveal Apollo 
 
 </button>
 
 <a style="color:white;" href="index.html">
     Back to homepage
 </a>
+
+<p id="here">
+
+</p>
 
 </body>
 </html>
