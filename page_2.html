@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {background-color: black;}
+</style>
+<body>
+
+<script>
+    function addImg()
+    {
+        var apollo = document.createElement("img");
+        apollo.src = 'apollo.jpg';
+        apollo.width = "388";
+        apollo.height = "504";
+        document.getElementById('here').appendChild(apollo);
+    }
+</script>
+
+<h1 style="color: blue;">
+    Welcome to my page about my cat Manchas 
+</h1>
+
+<h3 style="color: wheat;">
+    Manchas is an old Kitty, as of 2023 he is 12 years old and he is still 
+    going <em>strong</em>
+</h3>
+
+<p style="color: wheat;">
+    This is him in 2023:
+</p>
+
+<img src="manchas_2023.jpg" alt="Manchas in 2023" width="504" height="388" id="manchas-2023">
+
+<p style="color: wheat;">
+    This is him in 2017:
+</p>
+<img src="manchas_2017.jpg" alt="Manchas is 2017" width="388" height="504" id="manchas-2017">
+
+<p style="color: wheat;">
+    This year we got a new kitty and his name is Apollo!
+</p>
+
+
+<p></p>
+
+<button style="color: red;" onclick="addImg()">Click here to reveal Apollo 
+
+</button>
+
+<a style="color:white;" href="index.html">
+    Back to homepage
+</a>
+
+<p id="here">
+
+</p>
+
+</body>
+</html>
