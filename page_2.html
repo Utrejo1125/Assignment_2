@@ -6,13 +6,18 @@
 <body>
 
 <script>
+    var isAdded = 0;
     function addImg()
     {
-        var apollo = document.createElement("img");
-        apollo.src = 'apollo.jpg';
-        apollo.width = "388";
-        apollo.height = "504";
-        document.getElementById('here').appendChild(apollo);
+        if (isAdded === 0)
+        {
+            var apollo = document.createElement("img");
+            apollo.src = 'apollo.jpg';
+            apollo.width = "388";
+            apollo.height = "504";
+            document.getElementById('here').appendChild(apollo);
+            isAdded = 1;
+        }
     }
 </script>
 
